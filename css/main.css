@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 * {
+  font-family: 'Noto Sans';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,4 +14,88 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+body {
+  background-color: #4f4cb1;
+  color: #fff;
+}
+.header,
+.container,
+.footer {
+  width: 1920px;
+  margin: 0 auto;
+}
+.header .nav {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.header ul {
+  margin: 0 auto;
+  padding-right: 90px;
+  display: flex;
+  font-size: 28px;
+  font-weight: 700;
+}
+.header ul li {
+  margin-right: 100px;
+}
+.header > nav > img {
+  margin-left: 30px;
+}
+.header > img {
+  margin-bottom: 130px;
+}
+.footer {
+  padding-top: 100px;
+}
+.footer_top {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: space-between; */
+  position: relative;
+}
+.footer_top > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer_top .logo {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+.footer_top .logo img {
+  margin-left: 80px;
+}
+.footer > img {
+  margin-bottom: 30px;
+}
+.footer_bottom .text {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 15px;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer_bottom h1 {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 100px;
 }
