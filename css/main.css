@@ -178,7 +178,7 @@ body {
 .section1_03 .content ul li p {
   margin-bottom: 10px;
   margin-top: 20px;
-  font-weight: 400;
+  font-weight: 00;
   font-size: 16px;
   line-height: 22px;
 }
@@ -287,13 +287,13 @@ body {
   bottom: 80px;
 }
 .section2_01 .left h1 {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 42px;
-  line-height: 70px;
+  line-height: 80px;
   margin-bottom: 42px;
 }
 .section2_01 .left h1 span {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 72px;
 }
 .section2_01 .left p {
@@ -315,7 +315,7 @@ body {
   margin-bottom: 110px;
 }
 .section2_02 .content_t h1 {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 46px;
 }
 .section2_02 .content_t > ul {
@@ -324,7 +324,7 @@ body {
   justify-content: space-between;
 }
 .section2_02 .content_t > ul > li {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 31px;
 }
 .section2_02 .content_bt > ul {
@@ -385,57 +385,64 @@ body {
   margin-top: 130px;
   margin-bottom: 200px;
 }
-.section3_02 {
-}
-.section3_02 .content_t,
-.section3_02 .content_bt {
+.section3_02 > .content_t,
+.section3_02 > .content_bt {
   width: 1140px;
   margin: 0 auto;
 }
-.content_t {
+.section3_02 > .content_t {
   display: flex;
   justify-content: space-between;
   height: 940px;
   margin-top: 130px;
   margin-bottom: 100px;
 }
-.content_t > img {
+.section3_02 > .content_t > img {
   width: 568px;
   height: 860px;
 }
-.content_t > h1 {
+.section3_02 > .content_t > h1 {
   font-weight: 600;
-  font-size: 46px;
+  font-size: 50px;
   line-height: 70px;
 }
-.content_bt h1 {
+.section3_02 > .content_t > h1 span {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 70px;
+  opacity: 70%;
+}
+
+.section3_02 > .content_bt h1 {
   margin-bottom: 40px;
   font-weight: 400;
   font-size: 30px;
 }
-.content_bt h2 {
+
+.section3_02 > .content_bt h2 {
   font-weight: 600;
   font-size: 61px;
   margin-bottom: 70px;
 }
-.content_bt ul {
+
+.section3_02 > .content_bt ul {
   display: flex;
   margin-bottom: 100px;
 }
-.content_bt ul li h3 {
+.section3_02 > .content_bt ul li h3 {
   font-weight: 100;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 50px;
   opacity: 30%;
 }
-.content_bt ul .top h3 {
+.section3_02 > .content_bt ul .top h3 {
   font-weight: 400;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 50px;
   opacity: 100%;
   margin-right: 90px;
 }
-.content_bt p {
+.section3_02 > .content_bt p {
   margin-bottom: 70px;
   font-weight: 400;
   font-size: 26px;
@@ -443,7 +450,7 @@ body {
 
   color: rgba(255, 255, 255, 0.7);
 }
-.content_bt button {
+.section3_02 > .content_bt button {
   width: 270px;
   height: 90px;
   background-color: #fff;
