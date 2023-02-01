@@ -357,9 +357,7 @@ body {
 /* .section3 */
 .section3_01 {
   width: 1920px;
-  height: 1067px;
   position: relative;
-  margin-bottom: 250px;
 }
 .section3_01 .content > img {
   position: absolute;
