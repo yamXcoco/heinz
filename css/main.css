@@ -59,7 +59,7 @@ body {
 .section1_01 .content {
   /* display: flex; */
   height: 1222px;
-  background-image: url(/IMG/mainpage_pic.png);
+  background-image: url(../IMG/mainpage_pic.png);
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,7 +137,7 @@ body {
   opacity: 50%;
 }
 .section1_02 .content {
-  background-image: url(/IMG/tomato.png);
+  background-image: url(../IMG/tomato.png);
   height: 435px;
   background-position: center;
   background-repeat: no-repeat;
@@ -264,7 +264,7 @@ body {
 .section2_01 {
   width: 1920px;
   height: 1067px;
-  background-image: url(/IMG/sub_split.png);
+  background-image: url(../IMG/sub_split.png);
   /* background-position: center;
   background-repeat: no-repeat;
   background-position: center; */
@@ -434,7 +434,7 @@ body {
   opacity: 70%;
 }
 .ingredient ul li {
-  background-image: url(/IMG/sub_02_circle.png);
+  background-image: url(../IMG/sub_02_circle.png);
   width: 200px;
   height: 200px;
   margin-bottom: 30px;
