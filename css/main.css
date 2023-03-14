@@ -22,20 +22,23 @@ body {
 .header,
 .container,
 .footer {
-  width: 1920px;
+  width: 100vw;
   margin: 0 auto;
 }
 .header .nav {
-  height: 120px;
+  background-color: #4f4cb1;
+  height: 80px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+}
+.header .nav .logo {
+  height: 80px;
 }
 .header ul {
   margin: 0 auto;
   padding-right: 90px;
   display: flex;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
 }
 .header ul li {
@@ -45,69 +48,83 @@ body {
   margin-left: 30px;
 }
 .header .nav li:hover {
-  font-size: 30px;
+  color: black;
 }
-.head_banner{
+.head_banner {
   position: relative;
+  height: 700px;
 }
-.header .head_banner img{
+.head_banner video {
+  width: 100vw;
+  z-index: -100;
+  position: fixed;
+  top: 0;
+}
+.header .head_banner img {
   position: absolute;
-  top: 40%;
-  left: 34%; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* // */
 .section1_01 .content {
-  /* display: flex; */
-  height: 1222px;
-  background-image: url(../IMG/mainpage_pic.png);
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* position: relative; */
+  padding-top: 130px;
+  padding-bottom: 130px;
+  display: flex;
+  background-color: #4f4cb1;
+}
+.section1_01 .content .imgbox {
   position: relative;
-  margin-top: 130px;
-  margin-bottom: 130px;
+}
+.section1_01 .content img {
+  width: 100%;
 }
 .section1_01 .text {
   position: absolute;
-  top: 410px;
-  right: 200px;
+  top: 50%;
+  left: 76%;
+  transform: translate(-50%, -50%);
 }
 .section1_01 .text h1 {
   font-weight: 500;
-  font-size: 47px;
+  font-size: 40px;
   line-height: 64px;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
   opacity: 80%;
 }
 .section1_01 .text h2 {
   font-weight: 700;
-  font-size: 68px;
+  font-size: 60px;
   padding-bottom: 80px;
 }
 .section1_01 .text p {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 27px;
   padding-bottom: 50px;
   opacity: 80%;
 }
 .section1_01 button {
-  width: 270px;
-  height: 90px;
+  width: 200px;
+  height: 70px;
   background-color: #fff;
   border: none;
-  color: #4f4cb1;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
+  color: #4f4cb1;
 }
-.section1_01 button:hover{
+.section1_01 button:hover {
   border: 1px solid #fff;
   color: #fff;
+}
+.section1_02 {
   background-color: #4f4cb1;
-
 }
 .section1_02 > img {
+  display: block;
   padding-bottom: 130px;
+  width: 100vw;
 }
 .section1_02 .content_box {
   width: 1140px;
@@ -139,6 +156,8 @@ body {
 .section1_02 .content {
   background-image: url(../IMG/tomato.png);
   height: 435px;
+  display: block;
+  justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,6 +193,9 @@ body {
   font-size: 19px;
   margin-bottom: 70px;
 }
+.section1_03 {
+  background-color: #4f4cb1;
+}
 .section1_03 .content {
   width: 1140px;
   margin: 0 auto;
@@ -187,8 +209,6 @@ body {
 .section1_03 .content ul {
   display: flex;
   justify-content: space-between;
-}
-.section1_03 .content ul li img {
 }
 .section1_03 .content ul li p {
   margin-bottom: 10px;
@@ -204,11 +224,13 @@ body {
   opacity: 50%;
 }
 .section1_03 > img {
-  margin: 130px 0;
-  /* margin-bottom: 100px; */
+  padding: 130px 0;
+  width: 100vw;
+  background-color: #4f4cb1;
 }
 /* // */
 .footer {
+  background-color: #4f4cb1;
   padding-top: 100px;
 }
 .footer_top {
@@ -233,6 +255,7 @@ body {
 }
 .footer > img {
   margin-bottom: 30px;
+  width: 100vw;
 }
 .footer_bottom .text {
   width: 1140px;
@@ -243,9 +266,7 @@ body {
   font-weight: 600;
   font-size: 13px;
   margin-bottom: 15px;
-
   text-align: center;
-
   color: rgba(255, 255, 255, 0.5);
 }
 .footer_bottom h1 {
@@ -257,7 +278,7 @@ body {
   text-align: center;
 
   color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 /* sub_01 */
@@ -355,15 +376,14 @@ body {
   font-size: 30px;
   opacity: 70%;
 }
-.section2_02 .content_bt > ul > li{
+.section2_02 .content_bt > ul > li {
   height: 500px;
 }
 
-.section2_02 .content_bt > ul > li img:hover{
+.section2_02 .content_bt > ul > li img:hover {
   width: 105%;
 }
 .section2_02 .content_bt > ul:last-child p:last-child {
-
 }
 .section2_02 .page_number > .text {
   width: 270px;
