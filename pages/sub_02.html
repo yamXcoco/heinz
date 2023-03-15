@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>heinz_sub_02</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="nav">
-        <a href="../index.html">
-          <img src="../IMG/nav_logo.png" alt="" />
-        </a>
-        <ul>
-          <li><a href="./sub_01.html">PRODUCT</a></li>
-          <li><a href="./sub_01.html">BRAND STORY</a></li>
-          <li><a href="./sub_01.html">RECIPE</a></li>
-          <li><a href="./sub_01.html">BLOG</a></li>
-        </ul>
-      </div>
-    </div>
     <div class="container">
+      <div class="header">
+        <div class="nav">
+          <a href="../index.html">
+            <img class="logo" src="../IMG/nav_logo.png" alt="" />
+          </a>
+          <ul>
+            <li><a href="sub_01.html">PRODUCT</a></li>
+            <li><a href="sub_01.html">BRAND STORY</a></li>
+            <li><a href="sub_01.html">RECIPE</a></li>
+            <li><a href="sub_01.html">BLOG</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="section3_01">
         <img src="../IMG/blue_red_line.png" alt="" />
         <div class="content">
@@ -29,6 +39,7 @@
             <img src="../IMG/h.png" alt="" />
             <pre>PRODUCT      &#60;      케찹</pre>
           </div>
+        </div>
       </div>
       <div class="section3_02">
         <div class="content_t">
@@ -78,108 +89,161 @@
               <h3>미국</h3>
               <h3>15개월</h3>
               <h3>(6개입/박스)</h3>
-
             </li>
           </ul>
           <p>
-            USDA(미국 농무성) 승인받은 인정받은 유기농 원료를 사용하여   만들어 <br>
-            건강을 생각하시는 분들이나 아이들의 건강을 생각하시는 주부들에게 추천드리는 케찹입니다.
+            USDA(미국 농무성) 승인받은 인정받은 유기농 원료를 사용하여 만들어
+            <br />
+            건강을 생각하시는 분들이나 아이들의 건강을 생각하시는 주부들에게
+            추천드리는 케찹입니다.
           </p>
           <button>구매하기</button>
         </div>
         <img src="../IMG/blue_red_line.png" class="line_02" alt="" />
-        
+
         <div class="section1_03 sub_02">
-        <div class="content">
-          <h1>상품보러가기</h1>
-          <ul class="content">
-            <li>
-              <a href="#x">
-                <img src="../IMG/main_s_01.png" alt="" />
-                <p>
-                  오스카마이어 <br />
-                  오리지널 베이컨
-                </p>
-                <p class="min">
-                  OSCAR MAYER BACON NATURALLY <br />
-                  HARDWOOD SMOKED
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#x">
-                <img src="../IMG/main_s_02.png" alt="" />
-                <p>
-                  하인즈 시리어스리 굿 아이올리 <br />
-                  (500ml)
-                </p>
-                <p class="min">
-                  SERIOUSLY GOOD <br />
-                  GARLIC AIOLI(500ml)
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#x">
-                <img src="../IMG/main_s_03.png" alt="" />
-                <p>
-                  크래프트 맥앤치즈 <br />
-                  오리지널
-                </p>
-                <p class="min">
-                  KRAFT MACARONI & CHEESE <br />
-                  DINNER ORIGINAL FLAVOR
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#x">
-                <img src="../IMG/main_s_04.png" alt="" />
-                <p>
-                  하인즈 시리어스리 굿 마요네즈<br />
-                  (500ml)
-                </p>
-                <p class="min">
-                  SERIOUSLY GOOD <br />
-                  MAYONNAISE(500ml)
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#x">
-                <img src="../IMG/main_s_05.png" alt="" />
-                <p>
-                  하인즈 화이트 발효식초<br />
-                  (473ml)
-                </p>
-                <p class="min">
-                  HEINZ DISTILLED <br />
-                  WHITE VINEGAR(473ml)
-                </p>
-              </a>
-            </li>
-          </ul>
+          <div class="content">
+            <div class="slide">
+              <i class="xi-angle-left fas fa-chevron-left prev"></i>
+              <i class="xi-angle-right fas fa-chevron-right next"></i>
+
+              <h1>상품보러가기</h1>
+              <div
+                class="slide_02"
+                data-slick='{"slidesToShow": 5, "slidesToScroll": 5}'
+              >
+                <div class="content">
+                  <a href="#x">
+                    <img src="../IMG/main_s_01.png" alt="" />
+                    <p>
+                      오스카마이어 <br />
+                      오리지널 베이컨
+                    </p>
+                    <p class="min">
+                      OSCAR MAYER BACON NATURALLY <br />
+                      HARDWOOD SMOKED
+                    </p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#x">
+                    <img src="../IMG/main_s_02.png" alt="" />
+                    <p>
+                      하인즈 시리어스리 굿 아이올리 <br />
+                      (500ml)
+                    </p>
+                    <p class="min">
+                      SERIOUSLY GOOD <br />
+                      GARLIC AIOLI(500ml)
+                    </p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#x">
+                    <img src="../IMG/main_s_03.png" alt="" />
+                    <p>
+                      크래프트 맥앤치즈 <br />
+                      오리지널
+                    </p>
+                    <p class="min">
+                      KRAFT MACARONI & CHEESE <br />
+                      DINNER ORIGINAL FLAVOR
+                    </p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#x">
+                    <img src="../IMG/main_s_04.png" alt="" />
+                    <p>
+                      하인즈 시리어스리 굿 마요네즈<br />
+                      (500ml)
+                    </p>
+                    <p class="min">
+                      SERIOUSLY GOOD <br />
+                      MAYONNAISE(500ml)
+                    </p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#x">
+                    <img src="../IMG/main_s_05.png" alt="" />
+                    <p>
+                      하인즈 화이트 발효식초<br />
+                      (473ml)
+                    </p>
+                    <p class="min">
+                      HEINZ DISTILLED <br />
+                      WHITE VINEGAR(473ml)
+                    </p>
+                  </a>
+                </div>
+                <div>
+                  <a href="#x">
+                    <img src="../IMG/main_s_02.png" alt="" />
+                    <p>
+                      하인즈 시리어스리 굿 아이올리 <br />
+                      (500ml)
+                    </p>
+                    <p class="min">
+                      SERIOUSLY GOOD <br />
+                      GARLIC AIOLI(500ml)
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_top">
+          <img src="../IMG/nav_logo.png" alt="" />
+          <div class="logo">
+            <img src="../IMG/facebook.png" alt="" />
+            <img src="../IMG/u_tube.png" alt="" />
+          </div>
+        </div>
+        <img src="../IMG/blue_red_line.png" alt="" />
+        <div class="footer_bottom">
+          <div class="text">
+            <p>06716서울특별시 서초구 반포대로 22 서초평화빌딩</p>
+            <p>대표전화:02-2193-0700 FAX:02-2193-0705</p>
+            <p>소비자보호전화:080-2193-0750</p>
+            <p>개인정보보호정책</p>
+          </div>
+          <h1>copyright 2017 KRAFTHEINZ KOREA. All rights reserved.</h1>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer_top">
-        <img src="../IMG/nav_logo.png" alt="" />
-        <div class="logo">
-          <img src="../IMG/facebook.png" alt="" />
-          <img src="../IMG/u_tube.png" alt="" />
-        </div>
-      </div>
-      <img src="../IMG/blue_red_line.png" alt="" />
-      <div class="footer_bottom">
-        <div class="text">
-          <p>06716서울특별시 서초구 반포대로 22 서초평화빌딩</p>
-          <p>대표전화:02-2193-0700 FAX:02-2193-0705</p>
-          <p>소비자보호전화:080-2193-0750</p>
-          <p>개인정보보호정책</p>
-        </div>
-        <h1>copyright 2017 KRAFTHEINZ KOREA. All rights reserved.</h1>
-      </div>
-    </div>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".slide_01").slick({
+        autoplay: true,
+        arrows: false,
+        speed: 880,
+      });
+      $(".slide_02").slick({
+        autoplay: true,
+        nextArrow: $(".next"),
+        prevArrow: $(".prev"),
+        speed: 400,
+        arrows: true,
+        pauseOnHover: true,
+        responsive: [
+          {
+            breakpoint: 960,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+        ],
+      });
+    </script>
   </body>
 </html>
