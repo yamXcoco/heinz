@@ -21,7 +21,7 @@
     <div class="container">
       <div class="header">
         <div class="nav">
-          <img class="logo" src="./IMG/logo_n.png" alt="" />
+          <img class="logo" src="../IMG/logo_n.png" alt="" />
           <ul class="gnb">
             <li><a href="./pages/sub_01.html">BRAND STORY</a></li>
             <li><a href="./pages/sub_01.html">PRODUCT</a></li>
@@ -31,7 +31,8 @@
           <div class="bars"><i class="xi-bars"></i></div>
         </div>
         <div class="head_banner">
-          <video autoplay muted loop>
+          <video muted loop>
+            <!-- autoplay  -->
             <source
               src="./IMG/Kraft_Heinz_Grown_Not_Made_ST8_1902x1080.mp4"
               type="video/mp4"
@@ -52,9 +53,8 @@
               <h2>하인즈 케찹</h2>
               <p>
                 세계에서 가장 많이 팔리는 하인즈 케찹. <br />
-                1876년부터 세계 최초로 생산된 하인즈 그룹의 대표 아이콘
-                제품으로,<br />
-                전 세계에서 매년 약 6억 5천만 개가 판매되고 있습니다.
+                1876년부터 세계 최초로 생산된 하인즈 그룹의 대표 <br />
+                제품으로, 전 세계에서 매년 약 6억 5천만 개가 판매되고 있습니다.
               </p>
               <button>레시피 보러가기</button>
             </div>
@@ -74,13 +74,13 @@
             높은 수확량을 갖는 종자만을 사용하여 케찹을 만듭니다. <br />
             세계인이 인정하는 맛 뿐만 아니라 색깔, 점도, 고형분 함량 등 여러
             가지 요소에서 타사 제품은 절대 따라올 수 없는 최고의 수준으로
-            인정받아, 전 세계 소비자들에게 가장 사랑 받는 케찹으로 자리매김하고
-            있습니다.
+            인정받아, <br />
+            전 세계 소비자들에게 가장 사랑 받는 케찹으로 자리매김하고 있습니다.
           </p>
           <div class="content">
             <div class="top">
-              <pre>하인즈 시드           일반 토마토</pre>
-              <pre>하인즈 시드           일반 토마토</pre>
+              <pre>하인즈 시드               일반 토마토</pre>
+              <pre>하인즈 시드               일반 토마토</pre>
             </div>
             <div class="bottom">
               <p class="p1">색 선명도 비교</p>
@@ -98,80 +98,100 @@
       </div>
       <div class="section1_03">
         <div class="content">
-          <h1>상품보러가기</h1>
-          <ul class="content">
-            <li>
-              <a href="#x">
-                <img src="./IMG/main_s_01.png" alt="" />
-                <p>
-                  오스카마이어 <br />
-                  오리지널 베이컨
-                </p>
-                <p class="min">
-                  OSCAR MAYER BACON NATURALLY <br />
-                  HARDWOOD SMOKED
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#x">
-                <img src="./IMG/main_s_02.png" alt="" />
-                <p>
-                  하인즈 시리어스리 굿 아이올리 <br />
-                  (500ml)
-                </p>
-                <p class="min">
-                  SERIOUSLY GOOD <br />
-                  GARLIC AIOLI(500ml)
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#x">
-                <img src="./IMG/main_s_03.png" alt="" />
-                <p>
-                  크래프트 맥앤치즈 <br />
-                  오리지널
-                </p>
-                <p class="min">
-                  KRAFT MACARONI & CHEESE <br />
-                  DINNER ORIGINAL FLAVOR
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#x">
-                <img src="./IMG/main_s_04.png" alt="" />
-                <p>
-                  하인즈 시리어스리 굿 마요네즈<br />
-                  (500ml)
-                </p>
-                <p class="min">
-                  SERIOUSLY GOOD <br />
-                  MAYONNAISE(500ml)
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#x">
-                <img src="./IMG/main_s_05.png" alt="" />
-                <p>
-                  하인즈 화이트 발효식초<br />
-                  (473ml)
-                </p>
-                <p class="min">
-                  HEINZ DISTILLED <br />
-                  WHITE VINEGAR(473ml)
-                </p>
-              </a>
-            </li>
-          </ul>
+          <div class="slide">
+            <i class="xi-angle-left fas fa-chevron-left prev"></i>
+            <i class="xi-angle-right fas fa-chevron-right next"></i>
+
+            <h1>상품보러가기</h1>
+            <div
+              class="slide_02"
+              data-slick='{"slidesToShow": 5, "slidesToScroll": 5}'
+            >
+              <div class="content">
+                <a href="#x">
+                  <img src="./IMG/main_s_01.png" alt="" />
+                  <p>
+                    오스카마이어 <br />
+                    오리지널 베이컨
+                  </p>
+                  <p class="min">
+                    OSCAR MAYER BACON NATURALLY <br />
+                    HARDWOOD SMOKED
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#x">
+                  <img src="./IMG/main_s_02.png" alt="" />
+                  <p>
+                    하인즈 시리어스리 굿 아이올리 <br />
+                    (500ml)
+                  </p>
+                  <p class="min">
+                    SERIOUSLY GOOD <br />
+                    GARLIC AIOLI(500ml)
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#x">
+                  <img src="./IMG/main_s_03.png" alt="" />
+                  <p>
+                    크래프트 맥앤치즈 <br />
+                    오리지널
+                  </p>
+                  <p class="min">
+                    KRAFT MACARONI & CHEESE <br />
+                    DINNER ORIGINAL FLAVOR
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#x">
+                  <img src="./IMG/main_s_04.png" alt="" />
+                  <p>
+                    하인즈 시리어스리 굿 마요네즈<br />
+                    (500ml)
+                  </p>
+                  <p class="min">
+                    SERIOUSLY GOOD <br />
+                    MAYONNAISE(500ml)
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#x">
+                  <img src="./IMG/main_s_05.png" alt="" />
+                  <p>
+                    하인즈 화이트 발효식초<br />
+                    (473ml)
+                  </p>
+                  <p class="min">
+                    HEINZ DISTILLED <br />
+                    WHITE VINEGAR(473ml)
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#x">
+                  <img src="./IMG/main_s_02.png" alt="" />
+                  <p>
+                    하인즈 시리어스리 굿 아이올리 <br />
+                    (500ml)
+                  </p>
+                  <p class="min">
+                    SERIOUSLY GOOD <br />
+                    GARLIC AIOLI(500ml)
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="slide_01">
           <div class="item item_01"></div>
           <div class="item item_02"></div>
         </div>
-        <!-- <img src="./IMG/mealtimes_banner.png" alt="" /> -->
       </div>
       <div class="footer">
         <div class="footer_top">
@@ -195,17 +215,39 @@
     </div>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-      $('.slide_01').slick({
+      $(".slide_01").slick({
         autoplay: true,
         arrows: false,
-        speed: 0,
-      })
+        speed: 880,
+      });
+      $(".slide_02").slick({
+        autoplay: true,
+        nextArrow: $(".next"),
+        prevArrow: $(".prev"),
+        speed: 400,
+        arrows: true,
+        pauseOnHover: true,
+        responsive: [
+          {
+            breakpoint: 960,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+        ],
+      });
     </script>
     <script>
-      $('.bars').click(function () {
-        $('.gnb').toggleClass('active')
-        $(this).find('i').toggleClass('xi-close')
-      })
+      $(".bars").click(function () {
+        $(".gnb").toggleClass("active");
+        $(this).find("i").toggleClass("xi-close");
+      });
     </script>
   </body>
 </html>
