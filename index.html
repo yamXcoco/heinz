@@ -31,8 +31,7 @@
           <div class="bars"><i class="xi-bars"></i></div>
         </div>
         <div class="head_banner">
-          <video muted loop>
-            <!-- autoplay  -->
+          <video autoplay muted loop>
             <source
               src="./IMG/Kraft_Heinz_Grown_Not_Made_ST8_1902x1080.mp4"
               type="video/mp4"
@@ -59,11 +58,10 @@
               <button>레시피 보러가기</button>
             </div>
           </div>
-          <!-- 배경으로 -->
         </div>
       </div>
       <div class="section1_02">
-        <img src="./IMG/blue_red_line.png" class="line_01" alt="" />
+        <div class="line"></div>
         <div class="content_box">
           <h1>브랜드 스토리</h1>
           <img src="./IMG/grown.png" class="grown" alt="" />
@@ -78,6 +76,7 @@
             전 세계 소비자들에게 가장 사랑 받는 케찹으로 자리매김하고 있습니다.
           </p>
           <div class="content">
+            <img class="bg" src="./IMG/tomato.png" alt="" />
             <div class="top">
               <pre>하인즈 시드               일반 토마토</pre>
               <pre>하인즈 시드               일반 토마토</pre>
@@ -93,15 +92,15 @@
           </p>
           <img src="./IMG/mainpage_note.png" alt="" />
         </div>
-
-        <img src="./IMG/blue_red_line.png" class="line_02" alt="" />
+        <div class="line"></div>
       </div>
       <div class="section1_03">
         <div class="content">
           <div class="slide">
-            <i class="xi-angle-left fas fa-chevron-left prev"></i>
-            <i class="xi-angle-right fas fa-chevron-right next"></i>
-
+            <div class="butt">
+              <i class="xi-angle-left fas fa-chevron-left prev"></i>
+              <i class="xi-angle-right fas fa-chevron-right next"></i>
+            </div>
             <h1>상품보러가기</h1>
             <div
               class="slide_02"
@@ -201,7 +200,7 @@
             <img src="./IMG/u_tube.png" alt="" />
           </div>
         </div>
-        <img src="./IMG/blue_red_line.png" alt="" />
+        <div class="line"></div>
         <div class="footer_bottom">
           <div class="text">
             <p>06716서울특별시 서초구 반포대로 22 서초평화빌딩</p>
@@ -215,15 +214,15 @@
     </div>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-      $(".slide_01").slick({
+      $('.slide_01').slick({
         autoplay: true,
         arrows: false,
         speed: 880,
-      });
-      $(".slide_02").slick({
+      })
+      $('.slide_02').slick({
         autoplay: true,
-        nextArrow: $(".next"),
-        prevArrow: $(".prev"),
+        nextArrow: $('.next'),
+        prevArrow: $('.prev'),
         speed: 400,
         arrows: true,
         pauseOnHover: true,
@@ -241,13 +240,23 @@
             },
           },
         ],
-      });
+      })
     </script>
     <script>
-      $(".bars").click(function () {
-        $(".gnb").toggleClass("active");
-        $(this).find("i").toggleClass("xi-close");
-      });
+      let bg = document.querySelector('.bg')
+      var width_size = window.innerWidth
+      $('.bars').click(function () {
+        $('.gnb').toggleClass('active')
+        $(this).find('i').toggleClass('xi-close')
+      })
+      function header() {
+        if (width_size < 768) {
+          bg.src = './IMG/rrr.png'
+        } else {
+          bg.src = './IMG/tomato.png'
+        }
+      }
+      window.addEventListener('resize', header)
     </script>
   </body>
 </html>

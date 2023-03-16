@@ -25,19 +25,17 @@
             <img class="logo" src="../IMG/logo_n.png" alt="" />
           </a>
           <ul class="gnb">
-            <li><a href="../sub_01.html">BRAND STORY</a></li>
-            <li><a href="../sub_01.html">PRODUCT</a></li>
-            <li><a href="../sub_01.html">RECIPE</a></li>
-            <li><a href="../sub_01.html">BLOG</a></li>
+            <li><a href="sub_01.html">BRAND STORY</a></li>
+            <li><a href="sub_01.html">PRODUCT</a></li>
+            <li><a href="sub_01.html">RECIPE</a></li>
+            <li><a href="sub_01.html">BLOG</a></li>
           </ul>
           <div class="bars"><i class="xi-bars"></i></div>
         </div>
       </div>
       <div class="section2_01">
         <div class="content">
-          <img src="../IMG/blue_red_line.png" class="line_top" alt="" />
-          <img class="split" src="../IMG/sub_split.png" alt="" />
-          <img src="../IMG/blue_red_line.png" class="line_bottom" alt="" />
+          <div class="line"></div>
           <div class="box">
             <div class="right">
               <img src="../IMG/h.png" alt="" />
@@ -63,8 +61,9 @@
               </p>
             </div>
           </div>
-          <img src="..IMG/blue_red_line.png" class="line_bottom" alt="" />
         </div>
+
+        <div class="line"></div>
       </div>
       <div class="section2_02">
         <div class="content_t">
@@ -157,7 +156,9 @@
           </div>
         </div>
       </div>
-      <img class="line_03" src="../IMG/blue_red_line.png" alt="" />
+
+      <div class="line"></div>
+
       <div class="section1_03">
         <div class="slide_01">
           <div class="item item_01"></div>
@@ -172,7 +173,7 @@
             <img src="../IMG/u_tube.png" alt="" />
           </div>
         </div>
-        <img src="../IMG/blue_red_line.png" alt="" />
+        <div class="line"></div>
         <div class="footer_bottom">
           <div class="text">
             <p>06716서울특별시 서초구 반포대로 22 서초평화빌딩</p>
@@ -186,11 +187,19 @@
     </div>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-      $(".slide_01").slick({
+      $('.slide_01').slick({
         autoplay: true,
         arrows: false,
         speed: 880,
-      });
+      })
+    </script>
+    <script>
+      let bg = document.querySelector('.bg')
+      var width_size = window.innerWidth
+      $('.bars').click(function () {
+        $('.gnb').toggleClass('active')
+        $(this).find('i').toggleClass('xi-close')
+      })
     </script>
   </body>
 </html>
