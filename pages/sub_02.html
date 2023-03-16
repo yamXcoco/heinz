@@ -22,18 +22,20 @@
       <div class="header">
         <div class="nav">
           <a href="../index.html">
-            <img class="logo" src="../IMG/nav_logo.png" alt="" />
+            <img class="logo" src="../IMG/logo_n.png" alt="" />
           </a>
-          <ul>
-            <li><a href="sub_01.html">BRAND STORY</a></li>
-            <li><a href="sub_01.html">PRODUCT</a></li>
-            <li><a href="sub_01.html">RECIPE</a></li>
-            <li><a href="sub_01.html">BLOG</a></li>
+          <ul class="gnb">
+            <li><a href="./sub_01.html">BRAND STORY</a></li>
+            <li><a href="./sub_01.html">PRODUCT</a></li>
+            <li><a href="./sub_01.html">RECIPE</a></li>
+            <li><a href="./sub_01.html">BLOG</a></li>
           </ul>
+          <div class="bars"><i class="xi-bars"></i></div>
         </div>
       </div>
       <div class="section3_01">
-        <img src="../IMG/blue_red_line.png" alt="" />
+        <div class="line"></div>
+        <!-- <img src="../IMG/blue_red_line.png" alt="" /> -->
         <div class="content">
           <div class="top_menu">
             <img src="../IMG/h.png" alt="" />
@@ -99,7 +101,7 @@
           </p>
           <button>구매하기</button>
         </div>
-        <img src="../IMG/blue_red_line.png" class="line_02" alt="" />
+        <div class="line"></div>
 
         <div class="section1_03 sub_02">
           <div class="content">
@@ -107,7 +109,7 @@
               <i class="xi-angle-left fas fa-chevron-left prev"></i>
               <i class="xi-angle-right fas fa-chevron-right next"></i>
 
-              <h1>상품보러가기</h1>
+              <h2>상품보러가기</h2>
               <div
                 class="slide_02"
                 data-slick='{"slidesToShow": 5, "slidesToScroll": 5}'
@@ -203,7 +205,8 @@
             <img src="../IMG/u_tube.png" alt="" />
           </div>
         </div>
-        <img src="../IMG/blue_red_line.png" alt="" />
+        <div class="line"></div>
+        <!-- <img src="../IMG/blue_red_line.png" alt="" /> -->
         <div class="footer_bottom">
           <div class="text">
             <p>06716서울특별시 서초구 반포대로 22 서초평화빌딩</p>
@@ -243,6 +246,14 @@
             },
           },
         ],
+      })
+    </script>
+    <script>
+      let bg = document.querySelector('.bg')
+      var width_size = window.innerWidth
+      $('.bars').click(function () {
+        $('.gnb').toggleClass('active')
+        $(this).find('i').toggleClass('xi-close')
       })
     </script>
   </body>

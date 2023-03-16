@@ -249,14 +249,13 @@
         $('.gnb').toggleClass('active')
         $(this).find('i').toggleClass('xi-close')
       })
-      function header() {
+      window.onload = function imgc() {
         if (width_size < 768) {
           bg.src = './IMG/rrr.png'
         } else {
           bg.src = './IMG/tomato.png'
         }
       }
-      window.addEventListener('resize', header)
     </script>
   </body>
 </html>
