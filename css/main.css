@@ -17,6 +17,7 @@ body {
   background-color: #4f4cb1;
   color: #fff;
 }
+/* 배경라인 */
 .line {
   height: 8px;
   background-image: url('../IMG/blue_red_line.png');
@@ -38,15 +39,17 @@ body {
   height: 70px;
   padding-left: 30px;
 }
-.header ul {
+.header .gnb {
   margin: 0 auto;
-  padding-right: 90px;
   display: flex;
   font-size: 18px;
   font-weight: 700;
 }
-.header ul li {
-  margin-right: 100px;
+.header .snb {
+  font-size: 22px;
+}
+.header li {
+  margin-right: 70px;
 }
 .header .nav li:hover {
   color: black;
@@ -680,8 +683,9 @@ body {
     padding-top: 30px;
   }
   .section1_02 .content_box h1 {
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 34px;
+    padding-bottom: 20px;
   }
   .section1_02 .content_box img {
     padding-bottom: 30px;
@@ -689,14 +693,14 @@ body {
   }
   .section1_02 .content_box h2 {
     padding-bottom: 40px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
   }
   .section1_02 .content_box p {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     width: 80vw;
     margin: 0 auto;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 24px;
   }
   .section1_02 .content {
@@ -742,6 +746,8 @@ body {
     text-align: center;
   }
   .section1_03 .content h1 {
+    font-weight: 500;
+    font-size: 34px;
     padding-top: 30px;
   }
   .slide_01 {
@@ -848,25 +854,25 @@ body {
   .section2_02 {
     width: 96%;
     padding: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
   .section2_02 .content_t {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-top: 30px;
   }
   .section2_02 .content_t h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .section2_02 .content_t > ul {
     width: 200px;
   }
   .section2_02 .content_t > ul > li {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
   }
   .section2_02 .content_bt > ul {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .section2_02 .content_bt > ul p {
     width: 120px;
@@ -888,8 +894,8 @@ body {
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
-    bottom: 0;
+    font-size: 13px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -926,7 +932,7 @@ body {
   }
   .section3_02 > .content_t > img {
     width: 210px;
-    height: 363px;
+    height: 350px;
     margin-top: 20px;
   }
   .section3_02 > .content_t > h1 {
@@ -986,6 +992,9 @@ body {
     width: 120px;
     height: 50px;
     font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .slide {
     margin-bottom: 30px;
   }
 }
