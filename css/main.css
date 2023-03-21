@@ -169,8 +169,14 @@ body {
   position: relative;
 }
 .section1_02 .content .bg {
+  background-image: url(../IMG/tomato.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* width: 50%; */
+  height: 470px;
   position: absolute;
-  bottom: -10;
+  bottom: -20px;
   right: 50%;
   transform: translateX(50%);
   width: 100%;
@@ -363,7 +369,7 @@ body {
 .section2_01 .left {
   position: absolute;
   right: 0;
-  bottom: -800px;
+  bottom: -700px;
 }
 .section2_01 .left h1 {
   font-weight: 400;
@@ -471,7 +477,7 @@ body {
 }
 .section1_03 .sub_02 {
   margin-top: 130px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .section3_02 > .content_t,
 .section3_02 > .content_bt {
@@ -483,7 +489,7 @@ body {
   justify-content: space-between;
   height: 940px;
   margin-top: 130px;
-  margin-bottom: 100px;
+  margin-bottom: 0;
 }
 .section3_02 > .content_t > img {
   width: 568px;
@@ -583,7 +589,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 100%;
+    width: 100vw;
     /* background-color: #4f4cb1; */
   }
   .header .nav {
@@ -710,11 +716,11 @@ body {
     margin-bottom: 30px;
   }
   .section1_02 .content .bg {
-    width: 40%;
+    width: 45%;
+    height: 200px;
     top: -40%;
   }
   .section1_02 .content .top {
-    /* display: none; */
     top: 0;
     left: 0;
   }

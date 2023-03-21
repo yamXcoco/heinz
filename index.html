@@ -83,7 +83,8 @@
             전 세계 소비자들에게 가장 사랑 받는 케찹으로 자리매김하고 있습니다.
           </p>
           <div class="content">
-            <img class="bg" src="./IMG/tomato.png" alt="" />
+            <div class="bg"></div>
+            <!-- <img class="bg" src="./IMG/tomato.png" alt="" /> -->
             <div class="top">
               <pre>하인즈 시드               일반 토마토</pre>
               <pre>하인즈 시드               일반 토마토</pre>
@@ -256,9 +257,10 @@
         $('.gnb').toggleClass('active')
         $(this).find('i').toggleClass('xi-close')
       })
-      window.onload = function imgc() {
-        if (width_size < 768) {
-          bg.src = './IMG/rrr.png'
+      // window.onload = imgc()
+      window.onresize = function imgc() {
+        if (width_size <= 768) {
+          bg.style.background.src = './IMG/sub2_img.png'
         } else {
           bg.src = './IMG/tomato.png'
         }
